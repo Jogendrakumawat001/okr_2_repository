@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="button_assign_lot_number.ListView.Buttons"
+       t-inherit="web.ListView.Buttons">
+
+        <!-- Insert the button before the default list view buttons container -->
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="after">
+            <!-- Button to assign lot/serial numbers to selected stock move lines -->
+            <button type="button" class="btn btn-primary"
+                    style="margin-left: 6px;"
+                    t-on-click="onAssignSerialClick">
+                Assign Lot/Serial Numbers
+            </button>
+        <a
+            t-att-title="title"
+            t-on-click.prevent.stop="onCloseClick"
+            role="button"
+            data-hotkey="v"
+        >
+        <span class="btn btn-secondary">Close</span></a>
+        </xpath>
+    </t>
+</templates>

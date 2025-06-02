@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit purchase order form to add button -->
+    <record id="view_purchase_order_form_inherit_show_move_lines" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.show.move.lines</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_open_serial_wizard"
+                        invisible="not has_pickings"
+                        type="object"
+                        string="Generate Lot/Serial Number"
+                        class="oe_highlight"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']//list//field[@name='product_id']" position="after">
+                <field name="lot_name" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

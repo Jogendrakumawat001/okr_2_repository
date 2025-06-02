@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    #HT01500-->
+    <record id="view_crm_lead_confirm_wizard" model="ir.ui.view">
+        <field name="name">crm.lead.confirm.wizard.form</field>
+        <field name="model">crm.lead.confirm.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Confirm Lead Conversion">
+                <group>
+                    <p>Are you sure you want to convert this lead into an
+                        opportunity?
+                    </p>
+                </group>
+                <footer>
+                    <button name="action_confirm_conversion" type="object"
+                            class="oe_highlight" string="OK"/>
+                    <button string="Cancel" class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_crm_lead_confirm_wizard" model="ir.actions.act_window">
+        <field name="name">Confirm Lead Conversion</field>
+        <field name="res_model">crm.lead.confirm.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_crm_lead_confirm_wizard"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

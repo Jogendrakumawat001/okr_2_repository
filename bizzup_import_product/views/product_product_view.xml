@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Inherit product form view to add new fields-->
+    <record id="view_product_form_inherit_status_source" model="ir.ui.view">
+        <field name="name">product.product.form.inherit.status.source</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='default_code']" position="after">
+                <field name="status"/>
+                <field name="source"/>
+                <field name="date_order"/>
+                <field name="arrival_date"/>
+                <field name="sold_date"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

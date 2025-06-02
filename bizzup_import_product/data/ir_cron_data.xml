@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Import or update product.template-->
+    <record id="cron_import_product_templates" model="ir.cron">
+        <field name="name">Import Product Templates from CSV</field>
+        <field name="model_id" ref="model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_import_product_templates()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="False"/>
+    </record>
+    <!--Import product.product-->
+    <record id="cron_create_products" model="ir.cron">
+        <field name="name">Create Products from CSV</field>
+        <field name="model_id" ref="model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_create_products()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="False"/>
+    </record>
+    <!--Import product serial lot number-->
+    <record id="cron_cron_create_lot" model="ir.cron">
+        <field name="name">Create Lot From CSV</field>
+        <field name="model_id" ref="stock.model_stock_lot"/>
+        <field name="state">code</field>
+        <field name="code">model.cron_create_lot_from_csv()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>

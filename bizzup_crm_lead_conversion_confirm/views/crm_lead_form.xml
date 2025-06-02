@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    #HT01500-->
+    <record id="crm_lead_form_view_inherit" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='%(crm.action_crm_lead2opportunity_partner)d']"
+                   position="replace">
+                <button name="action_open_conversion_wizard"
+                        invisible="type == 'opportunity' or not active"
+                        type="object" class="oe_highlight"
+                        string="Convert to Opportunity"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

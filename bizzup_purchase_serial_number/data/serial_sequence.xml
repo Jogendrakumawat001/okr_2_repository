@@ -1,0 +1,11 @@
+<odoo> to fix the date issue in invoice : 11:30 to 1:00
+    <data noupdate="1">
+        <record id="stock_move_line_lot_number_seq" model="ir.sequence">
+            <field name="name">Stock Move Line Lot Number</field>
+            <field name="code">stock.move.line.lot.number</field>
+            <field name="prefix"></field>
+            <field name="padding">0</field>
+            <field name="number_next">9417</field>
+        </record>
+    </data>
+</odoo>

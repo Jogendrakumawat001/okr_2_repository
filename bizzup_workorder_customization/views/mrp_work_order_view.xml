@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="mrp_production_workorder_tree_editable_view_workorder_inherit"
+            model="ir.ui.view">
+        <field name="name">
+            mrp.production.work.order.list.editable.inherit.workorder
+        </field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id"
+               ref="mrp.mrp_production_workorder_tree_editable_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='state']" position='after'>
+                <field name="scrap_qty" optional="show"/>
+                <field name="remaining_on_hand_qty" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

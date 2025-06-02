@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bizzup_crm_lead_conversion_confirm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-11 13:18+0000\n"
+"PO-Revision-Date: 2025-03-11 13:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model_terms:ir.ui.view,arch_db:bizzup_crm_lead_conversion_confirm.view_crm_lead_confirm_wizard
+msgid ""
+"Are you sure you want to convert this lead into an\n"
+"                        opportunity?"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model_terms:ir.ui.view,arch_db:bizzup_crm_lead_conversion_confirm.view_crm_lead_confirm_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#. odoo-python
+#: code:addons/bizzup_crm_lead_conversion_confirm/models/crm_lead.py:0
+#: model:ir.actions.act_window,name:bizzup_crm_lead_conversion_confirm.action_crm_lead_confirm_wizard
+#: model:ir.model,name:bizzup_crm_lead_conversion_confirm.model_crm_lead_confirm_wizard
+#: model_terms:ir.ui.view,arch_db:bizzup_crm_lead_conversion_confirm.view_crm_lead_confirm_wizard
+msgid "Confirm Lead Conversion"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#. odoo-python
+#: code:addons/bizzup_crm_lead_conversion_confirm/wizards/crm_lead_confirm_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:bizzup_crm_lead_conversion_confirm.crm_lead_form_view_inherit
+msgid "Convert to Opportunity"
+msgstr "המר להזדמנות"
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model.fields,field_description:bizzup_crm_lead_conversion_confirm.field_crm_lead_confirm_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model:ir.model,name:bizzup_crm_lead_conversion_confirm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "ליד/הזדמנות"
+
+#. module: bizzup_crm_lead_conversion_confirm
+#: model_terms:ir.ui.view,arch_db:bizzup_crm_lead_conversion_confirm.view_crm_lead_confirm_wizard
+msgid "OK"
+msgstr ""
