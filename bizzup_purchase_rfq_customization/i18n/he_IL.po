@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bizzup_purchase_rfq_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-29 12:42+0000\n"
+"PO-Revision-Date: 2025-04-29 12:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Amount</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Description</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Disc.</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Qty</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Taxes</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.report_purchaseorder_custom
+msgid "<strong>Unit Price</strong>"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.view_purchase_order_form_custom
+msgid "Estimated Hours"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model_terms:ir.ui.view,arch_db:bizzup_purchase_rfq_customization.view_purchase_order_form_custom
+msgid "Location"
+msgstr "מיקומים"
+
+#. module: bizzup_purchase_rfq_customization
+#: model:ir.model.fields.selection,name:bizzup_purchase_rfq_customization.selection__purchase_order__state__on_hold
+msgid "On Hold"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model:ir.model.fields,field_description:bizzup_purchase_rfq_customization.field_purchase_order__previous_user_id
+msgid "Previous Responsible"
+msgstr ""
+
+#. module: bizzup_purchase_rfq_customization
+#: model:ir.model,name:bizzup_purchase_rfq_customization.model_purchase_order
+msgid "Purchase Order"
+msgstr "הזמנת רכש"
+
+#. module: bizzup_purchase_rfq_customization
+#: model:ir.model.fields,field_description:bizzup_purchase_rfq_customization.field_purchase_order__state
+msgid "Status"
+msgstr "סטטוס"
+
+#. module: bizzup_purchase_rfq_customization
+#: model:ir.model.fields,field_description:bizzup_purchase_rfq_customization.field_purchase_order__total_price
+msgid "Total Price"
+msgstr ""

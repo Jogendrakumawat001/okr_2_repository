@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_purchase_order_form_custom" model="ir.ui.view">
+        <field name="name">purchase.order.form.total.price</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="total_price"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/list/field[@name='product_category_id']"
+                   position="attributes">
+                <!--Ticket HT01724-->
+                <!--Added one form type in domain-->
+                <attribute name="column_invisible">parent.form_type not in ('service')</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_create_invoice']"
+                   position="attributes">
+                <attribute name="invisible">state not in ['purchase', 'done']</attribute>
+            </xpath>
+            <xpath expr="//list//field[@name='product_category_id']" position="attributes">
+                <attribute name="string">Location</attribute>
+            </xpath>
+            <xpath expr="//list//field[@name='product_id']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//list//field[@name='product_template_id']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/form//field[@name='product_id']" position="attributes">
+                <attribute name="required">False</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_cancel']"
+                   position="after">
+                <button name="action_on_hold_stage" string="On-Hold"
+                        type="object"
+                        invisible="state in ['on_hold']"
+                        class="btn-secondary"/>
+            </xpath>
+            <xpath expr="//button[@name='print_quotation'][1]"
+                   position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//button[@name='print_quotation'][2]"
+                   position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

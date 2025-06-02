@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_purchasequotation_document_inherit" inherit_id="purchase.report_purchasequotation_document">
+
+        <xpath expr="//th[@name='th_expected_date']" position="attributes">
+            <attribute name="style">display:none;</attribute>
+        </xpath>
+        <xpath expr="//t[@t-foreach='o.order_line']//td[2]" position="attributes">
+            <attribute name="style">display:none;</attribute>
+        </xpath>
+
+        <xpath expr="//th[@name='th_description']" position="after">
+            <th name="th_internal_ref" class="text-center">
+                Internal Reference/SKU
+            </th>
+        </xpath>
+        <xpath expr="//td[@id='product']" position="after">
+            <td name="td_internal_ref" class="text-center">
+                <span t-field="order_line.x_studio_integer_field_1dl_1ijaro20e"/>
+            </td>
+        </xpath>
+        <!--Remove partner address-->
+        <xpath expr="//div[@t-field='o.partner_id']" position="attributes">
+            <attribute name="style">display:none;</attribute>
+        </xpath>
+    </template>
+</odoo>
